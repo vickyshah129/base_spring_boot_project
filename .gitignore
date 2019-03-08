@@ -1,0 +1,6 @@
+/target/classes/com/*.class
+*.class
+*.iml
+META-INF
+/.idea
+config
