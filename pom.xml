@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.innowi.pos</groupId>
-    <artifactId>employee-ms</artifactId>
+    <artifactId>Platform-Service</artifactId>
     <version>0.1.0</version>
 
     <parent>
@@ -52,7 +52,7 @@
             <version>2.9.2</version>
         </dependency>
 
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
@@ -60,7 +60,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-oauth2</artifactId>
             <version>2.1.1.RELEASE</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -92,7 +92,5 @@
             </plugin>
         </plugins>
     </build>
-
-
 
 </project>

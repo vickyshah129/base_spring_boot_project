@@ -1,5 +1,5 @@
 package com.project.dto;
-// Generated Jan 7, 2019 7:11:18 PM by Hibernate Tools 5.2.11.Final
+
 
 public class PermissionDto implements java.io.Serializable {
 

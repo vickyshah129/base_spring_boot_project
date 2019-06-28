@@ -6,7 +6,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.BeanWrapper;
 import org.springframework.beans.BeanWrapperImpl;
 import org.springframework.http.HttpMethod;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+/*import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;*/
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
@@ -36,7 +36,7 @@ public class Utils {
 	
 	private static final Logger logger = LoggerFactory.getLogger(Utils.class);
 	
-	private static BCryptPasswordEncoder passwordEncoder;
+	/*private static BCryptPasswordEncoder passwordEncoder;*/
 
 	public static DecimalFormat ONE_DECIMAL_POINT_FORMAT = new DecimalFormat("#.#");
 	public static DecimalFormat TWO_DECIMAL_POINT_FORMAT = new DecimalFormat("#.##");
@@ -340,7 +340,7 @@ public class Utils {
 		return randomString.nextString();
 	}
 
-	public static String encodePassword(String rawPassword) {
+	/*public static String encodePassword(String rawPassword) {
 		passwordEncoder = new BCryptPasswordEncoder();
 		return passwordEncoder.encode(rawPassword);
 	}
@@ -348,7 +348,7 @@ public class Utils {
 	public static boolean decodePassword(String rawPassword, String encodedPassword) {
 		passwordEncoder = new BCryptPasswordEncoder();
 		return passwordEncoder.matches(rawPassword,encodedPassword);
-	}
+	}*/
 
 	public static int getHoursFromDate(Date date){
 		Calendar calendar = Calendar.getInstance();

@@ -1,3 +1,4 @@
+/*
 package com.project.util;
 
 import com.project.util.RestURL;
@@ -16,7 +17,8 @@ import java.util.Map;
 @Component
 public class RestClient {
 
-    @Value("${auth.server.baseUrl}")
+    */
+/*@Value("${auth.server.baseUrl}")
     private String AUTH_SERVER_BASE_URL;
 
     @Autowired
@@ -43,5 +45,7 @@ public class RestClient {
 
         HttpEntity entity = new HttpEntity(map, headers);
         return restTemplate.exchange(this.AUTH_SERVER_BASE_URL + urlDetail.getUrl(), urlDetail.getRequestMethod(),entity, Integer.class).getBody();
-    }
+    }*//*
+
 }
+*/

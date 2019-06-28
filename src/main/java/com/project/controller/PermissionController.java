@@ -10,6 +10,7 @@ import com.project.util.StatusMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -29,6 +30,12 @@ public class PermissionController extends BaseController {
         Permission permission = permissionService.getPermissionById(permissionId);
         PermissionDto permissionDto = (PermissionDto) permissionTranslator.translateToDTO(permission);
         return response(permissionDto);
+    }
+
+    @GetMapping
+    public List<Permission> getAllPermissions() {
+        List<Permission> permissions = permissionService.getAllPermission();
+        return response(permissions);
     }
 
     @PostMapping
